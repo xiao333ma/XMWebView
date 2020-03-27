@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1689294A8D57BFB05B967D3A /* Pods_XMWebView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AE756D8BE5C69605C8E265 /* Pods_XMWebView_Example.framework */; };
+		3D925411242E51520076D758 /* XMTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D925410242E51520076D758 /* XMTest1ViewController.m */; };
+		3D925414242E54750076D758 /* XMWebViewTest1Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D925413242E54740076D758 /* XMWebViewTest1Handler.m */; };
 		460188659A0865DFFC9ADA0C /* Pods_XMWebView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787E4B70A6A4AEC1200A4113 /* Pods_XMWebView_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -39,10 +41,14 @@
 /* Begin PBXFileReference section */
 		11835BCC3AC559DF18D55773 /* Pods-XMWebView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMWebView_Example.debug.xcconfig"; path = "Target Support Files/Pods-XMWebView_Example/Pods-XMWebView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		37AE756D8BE5C69605C8E265 /* Pods_XMWebView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMWebView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		407A3C45DE0993A1E86FA5D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		4226179ADF71814E139616C4 /* XMWebView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XMWebView.podspec; path = ../XMWebView.podspec; sourceTree = "<group>"; };
+		3D92540F242E51520076D758 /* XMTest1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMTest1ViewController.h; sourceTree = "<group>"; };
+		3D925410242E51520076D758 /* XMTest1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMTest1ViewController.m; sourceTree = "<group>"; };
+		3D925412242E54740076D758 /* XMWebViewTest1Handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMWebViewTest1Handler.h; sourceTree = "<group>"; };
+		3D925413242E54740076D758 /* XMWebViewTest1Handler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMWebViewTest1Handler.m; sourceTree = "<group>"; };
+		407A3C45DE0993A1E86FA5D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4226179ADF71814E139616C4 /* XMWebView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XMWebView.podspec; path = ../XMWebView.podspec; sourceTree = "<group>"; };
 		436DFC4A1E89FB1DBEA2C394 /* Pods-XMWebView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMWebView_Tests.release.xcconfig"; path = "Target Support Files/Pods-XMWebView_Tests/Pods-XMWebView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5E06602E4F9E77BA4A79D880 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5E06602E4F9E77BA4A79D880 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XMWebView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMWebView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -137,6 +143,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XMViewController.h */,
 				6003F5A6195388D20070C39A /* XMViewController.m */,
+				3D92540F242E51520076D758 /* XMTest1ViewController.h */,
+				3D925410242E51520076D758 /* XMTest1ViewController.m */,
+				3D925412242E54740076D758 /* XMWebViewTest1Handler.h */,
+				3D925413242E54740076D758 /* XMWebViewTest1Handler.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -193,7 +203,6 @@
 				7A4FDA5E75BA5286C238B089 /* Pods-XMWebView_Tests.debug.xcconfig */,
 				436DFC4A1E89FB1DBEA2C394 /* Pods-XMWebView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +267,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +312,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XMWebView_Example/Pods-XMWebView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/XMWebView/XMWebView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMWebView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +379,8 @@
 				6003F59E195388D20070C39A /* XMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* XMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				3D925411242E51520076D758 /* XMTest1ViewController.m in Sources */,
+				3D925414242E54750076D758 /* XMWebViewTest1Handler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

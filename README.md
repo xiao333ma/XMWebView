@@ -5,25 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/XMWebView.svg?style=flat)](https://cocoapods.org/pods/XMWebView)
 [![Platform](https://img.shields.io/cocoapods/p/XMWebView.svg?style=flat)](https://cocoapods.org/pods/XMWebView)
 
-## Example
+一个轻量级的 Hybrid 框架
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-XMWebView is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'XMWebView'
-```
-
-## Author
-
-xiao3333ma@gmail.com, xiao3333ma@gmail.com
-
-## License
-
-XMWebView is available under the MIT license. See the LICENSE file for more info.
+![info](./info.png)

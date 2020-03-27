@@ -1,0 +1,6 @@
+framework module XMWebView {
+  umbrella header "XMWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}

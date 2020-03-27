@@ -1,0 +1,23 @@
+PODS:
+  - Masonry (1.1.0)
+  - XMWebView (1.0):
+    - Masonry
+
+DEPENDENCIES:
+  - XMWebView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  XMWebView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  XMWebView: c5e173c0cbafe31037d12f7605395e02cd633cff
+
+PODFILE CHECKSUM: e2f573d295b6bae46600eced4fca0670b6638a17
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,6 @@
+framework module Pods_XMWebView_Example {
+  umbrella header "Pods-XMWebView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
