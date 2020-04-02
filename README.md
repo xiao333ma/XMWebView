@@ -14,7 +14,9 @@
 #### JS -> Native
 
 1. 通过 `WKUserContentController` 的 `addScriptMessageHandler:` 方法注册一个 MessageHandler
-2. JS 通过 `window.webkit.messageHandlers.XM_JS2Native.postMessage(parameters);` 来调用到 Native，该框架只是对这两个方法的封装，以更加统一的方式，来打通 Native - JS
+2. JS 通过 `window.webkit.messageHandlers.XM_JS2Native.postMessage(parameters);` 来调用到 Native。 
+
+该框架只是对这两个方法的封装，以更加统一的方式，来打通 Native - JS
 
 封装之后，框架如下
 ![info](./info.png)
@@ -36,7 +38,7 @@ JS 组装器，用来组装 Native 调用 JS 字符串, `XMWebViewJSDefaultAssem
 
 #### JSInvoker 
 
-JSInvoker 会把每一个 JS 调用封装为 `XMWebViewJSInvokeOperation` 放到队列里来执行，队列有两个 `invokJSQueueWithLoadingState` 会在 webView loading 结束之后，开始执行；`invokJSQueueIgnoreLoadingState` 则会直接执行
+JSInvoker 会把每一个 JS 调用封装为 `XMWebViewJSInvokeOperation` 放到队列里来执行，队列有两个， `invokJSQueueWithLoadingState` 会在 webView loading 结束之后，开始执行；`invokJSQueueIgnoreLoadingState` 则会直接执行
 
 #### XMWebViewJSDispatcher
 
