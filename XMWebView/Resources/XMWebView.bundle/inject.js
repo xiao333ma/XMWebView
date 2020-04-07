@@ -1,4 +1,4 @@
-var __message_queue_prefix___MessageQueue = {};
+var __inject_func_name___MessageChannelMap = {};
 function __inject_func_name__(parameters) {
     var channel = new MessageChannel(); // 创建一个 MessageChannel
     if(!window.__native_callback_name__) {
@@ -6,11 +6,11 @@ function __inject_func_name__(parameters) {
     }
     var id = parameters.name + "_" + Math.random();
     parameters.id = id;
-    __message_queue_prefix___MessageQueue[id] = channel;
+    __inject_func_name___MessageChannelMap[id] = channel;
     window.__native_callback_name__[parameters.name] = function(nativeValue) {
-        if (nativeValue.id && __message_queue_prefix___MessageQueue[nativeValue.id]) {
-            __message_queue_prefix___MessageQueue[nativeValue.id].port1.postMessage(nativeValue);
-            delete __message_queue_prefix___MessageQueue[nativeValue.id];
+        if (nativeValue.id && __inject_func_name___MessageChannelMap[nativeValue.id]) {
+            __inject_func_name___MessageChannelMap[nativeValue.id].port1.postMessage(nativeValue);
+            delete __inject_func_name___MessageChannelMap[nativeValue.id];
         }
     };
     window.webkit.messageHandlers.__inject_func_name__.postMessage(parameters);

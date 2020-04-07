@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XMWebView'
-  s.version          = '1.0'
+  s.version          = '1.0.1'
   s.summary          = 'webView'
   s.description      = '一个可以定制的 webVeiw '
   s.homepage         = 'https://github.com/xiao333ma/XMWebView'

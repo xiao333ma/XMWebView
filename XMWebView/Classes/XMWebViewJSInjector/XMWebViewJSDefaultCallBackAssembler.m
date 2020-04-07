@@ -8,7 +8,7 @@
 
 #import "XMWebViewJSDefaultCallBackAssembler.h"
 
-NSString *const XMWebViewJSParserDefaultCallBackMethodName = @"XM_NativeCallBack";
+NSString *const XMWebViewJSParserDefaultCallBackMethodName = @"XM_NativeCallBackNameMap";
 
 @implementation XMWebViewJSDefaultCallBackAssembler
 

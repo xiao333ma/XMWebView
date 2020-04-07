@@ -84,7 +84,7 @@ message.body = @{
 webView 启动时 Native 主动注入一段 JS，来让 JS 调用 Native，Native 回调时会调用 `window.XM_NativeCallBackNameMap.funcName(params)` 来触发 MessageChannel 的 port1 发送消息，在 promise 中的 port2 的 onmessage 会被调用，然后执行 resolve 
 
 ``` js
-var XM_JS2Native_MessageQueue = {};
+var XM_JS2Native_MessageChannelMap = {};
 function XM_JS2Native(parameters) {
     var channel = new MessageChannel(); // 创建一个 MessageChannel
     if(!window.XM_NativeCallBackNameMap) {
@@ -92,12 +92,12 @@ function XM_JS2Native(parameters) {
     }
     var id = parameters.name + "_" + Math.random();
     parameters.id = id;
-    XM_JS2Native_MessageQueue[id] = channel;
+    XM_JS2Native_MessageChannelMap[id] = channel;
 
     window.XM_NativeCallBackNameMap[parameters.name] = function(nativeValue) {
-        if (nativeValue.id && XM_JS2Native_MessageQueue[nativeValue.id]) {
-            XM_JS2Native_MessageQueue[nativeValue.id].port1.postMessage(nativeValue);
-            delete XM_JS2Native_MessageQueue[nativeValue.id];
+        if (nativeValue.id && XM_JS2Native_MessageChannelMap[nativeValue.id]) {
+            XM_JS2Native_MessageChannelMap[nativeValue.id].port1.postMessage(nativeValue);
+            delete XM_JS2Native_MessageChannelMap[nativeValue.id];
         }
     };
     window.webkit.messageHandlers.XM_JS2Native.postMessage(parameters);
